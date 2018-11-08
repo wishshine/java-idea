@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.lemeng.lecloud.common.user.dao.UserLoginMapper">
+  <resultMap id="BaseResultMap" type="com.lemeng.lecloud.model.user.UserLogin">
+    <id column="user_id" jdbcType="BIGINT" property="userId" />
+    <result column="username" jdbcType="VARCHAR" property="username" />
+    <result column="password" jdbcType="VARCHAR" property="password" />
+    <result column="token" jdbcType="VARCHAR" property="token" />
+    <result column="token_date" jdbcType="TIMESTAMP" property="tokenDate" />
+    <result column="create_date" jdbcType="TIMESTAMP" property="createDate" />
+  </resultMap>
+  
+  <sql id="Base_Column_List">
+    user_id, username, password, token, token_date, create_date
+  </sql>
+  
+  <select id="selectByPrimaryKey" parameterType="java.lang.Long" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from user_login
+    where user_id = #{userId,jdbcType=BIGINT}
+  </select>
+  
+  <delete id="deleteByPrimaryKey" parameterType="java.lang.Long">
+    delete from user_login
+    where user_id = #{userId,jdbcType=BIGINT}
+  </delete>
+  
+  <insert id="insert" parameterType="com.lemeng.lecloud.model.user.UserLogin">
+    insert into user_login (user_id, username, password, 
+      token, token_date, create_date
+      )
+    values (#{userId,jdbcType=BIGINT}, #{username,jdbcType=VARCHAR}, #{password,jdbcType=VARCHAR}, 
+      #{token,jdbcType=VARCHAR}, #{tokenDate,jdbcType=TIMESTAMP}, #{createDate,jdbcType=TIMESTAMP}
+      )
+  </insert>
+  
+  <insert id="insertSelective" parameterType="com.lemeng.lecloud.model.user.UserLogin">
+    insert into user_login
+    <trim prefix="(" suffix=")" suffixOverrides=",">
+      <if test="userId != null">
+        user_id,
+      </if>
+      <if test="username != null">
+        username,
+      </if>
+      <if test="password != null">
+        password,
+      </if>
+      <if test="token != null">
+        token,
+      </if>
+      <if test="tokenDate != null">
+        token_date,
+      </if>
+      <if test="createDate != null">
+        create_date,
+      </if>
+    </trim>
+    <trim prefix="values (" suffix=")" suffixOverrides=",">
+      <if test="userId != null">
+        #{userId,jdbcType=BIGINT},
+      </if>
+      <if test="username != null">
+        #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="token != null">
+        #{token,jdbcType=VARCHAR},
+      </if>
+      <if test="tokenDate != null">
+        #{tokenDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createDate != null">
+        #{createDate,jdbcType=TIMESTAMP},
+      </if>
+    </trim>
+  </insert>
+  
+  <update id="updateByPrimaryKeySelective" parameterType="com.lemeng.lecloud.model.user.UserLogin">
+    update user_login
+    <set>
+      <if test="username != null">
+        username = #{username,jdbcType=VARCHAR},
+      </if>
+      <if test="password != null">
+        password = #{password,jdbcType=VARCHAR},
+      </if>
+      <if test="token != null">
+        token = #{token,jdbcType=VARCHAR},
+      </if>
+      <if test="tokenDate != null">
+        token_date = #{tokenDate,jdbcType=TIMESTAMP},
+      </if>
+      <if test="createDate != null">
+        create_date = #{createDate,jdbcType=TIMESTAMP},
+      </if>
+    </set>
+    where user_id = #{userId,jdbcType=BIGINT}
+  </update>
+  
+  <update id="updateByPrimaryKey" parameterType="com.lemeng.lecloud.model.user.UserLogin">
+    update user_login
+    set username = #{username,jdbcType=VARCHAR},
+      password = #{password,jdbcType=VARCHAR},
+      token = #{token,jdbcType=VARCHAR},
+      token_date = #{tokenDate,jdbcType=TIMESTAMP},
+      create_date = #{createDate,jdbcType=TIMESTAMP}
+    where user_id = #{userId,jdbcType=BIGINT}
+  </update>
+  
+  <!--通过用户名获取用户登录信息  -->
+  <select id="selectByUsername" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from user_login
+    where username = #{username,jdbcType=BIGINT}
+  </select>
+  
+  <!--通过用户名获取用户登录信息  -->
+  <select id="selectByUsernameAndPassword" parameterType="java.lang.String" resultMap="BaseResultMap">
+    select 
+    <include refid="Base_Column_List" />
+    from user_login
+    where username = #{username,jdbcType=BIGINT}
+    and  password = #{password,jdbcType=VARCHAR}
+  </select>
+  
+</mapper>

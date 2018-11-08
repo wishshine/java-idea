@@ -1,0 +1,27 @@
+server: 
+    port: 1991
+spring:
+   application:
+      name: common-server
+   datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://111.231.248.54:3306/lecloud?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
+      username: root
+      password: 123456
+      type: com.alibaba.druid.pool.DruidDataSource
+   jackson:
+      date-format: yyyy-MM-dd HH:mm:ss
+      default-property-inclusion: non_null
+
+mybatis:
+   type-aliases-package: com.lemeng.lecloud.model
+   mapper-locations: classpath:mybatis/mapper/*.xml
+   
+eureka:
+   client:
+      serviceUrl:
+         defaultZone: http://localhost:8761/eureka/
+         
+logging:
+   config: classpath:logback-spring.xml
+   path: /selfServicelog/um-server/
