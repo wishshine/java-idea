@@ -3,13 +3,23 @@ server:
    
 spring:
    application:
-      name: ume-server   
+      name: ume-server
+
    datasource:
       driver-class-name: com.mysql.jdbc.Driver
       url: jdbc:mysql://111.231.248.54:3306/lechat?useUnicode=true&characterEncoding=utf-8&allowMultiQueries=true
       username: root
       password: 123456
       type: com.alibaba.druid.pool.DruidDataSource
+
+   jackson:
+      date-format: yyyy-MM-dd HH:mm:ss
+      default-property-inclusion: non_null
+
+   redis:
+      host: 111.231.248.54
+      port: 6379
+      password: redis1234
 
 eureka:
    client:
@@ -19,8 +29,4 @@ eureka:
 mybatis:
    type-aliases-package: com.lemeng.lecloud.model
    mapper-locations: classpath:mybatis/mapper/*.xml
-   
-logging:
-   config: classpath:logback-spring.xml
-   path: /selfServicelog/um-server/
-   
+

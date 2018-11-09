@@ -17,4 +17,9 @@ public interface LoginConstants {
 	 */
 	long TOKEN_EFFECTIVE_MILLS = 2592000000L;
 
+	/**
+	 *
+	 */
+	final String REDIS_CACHE_LOGIN_KEY="KEY_LOGIN_USER_ID";
+
 }
