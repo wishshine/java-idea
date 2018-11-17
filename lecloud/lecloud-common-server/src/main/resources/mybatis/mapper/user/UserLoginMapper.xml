@@ -120,7 +120,7 @@
   </select>
   
   <!--通过用户名获取用户登录信息  -->
-  <select id="selectByUsernameAndPassword" parameterType="java.lang.String" resultMap="BaseResultMap">
+  <select id="selectByUsernameAndPassword" parameterType="com.lemeng.lecloud.model.user.UserLogin" resultMap="BaseResultMap">
     select 
     <include refid="Base_Column_List" />
     from user_login

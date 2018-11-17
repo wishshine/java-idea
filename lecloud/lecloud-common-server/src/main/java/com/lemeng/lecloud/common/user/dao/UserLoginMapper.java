@@ -19,7 +19,7 @@ public interface UserLoginMapper {
 	/**
 	 * 用户名获取用户信息
 	 * 
-	 * @param userId
+	 * @param username
 	 * @return
 	 */
 	UserLogin selectByUsername(String username);
