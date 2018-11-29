@@ -7,6 +7,7 @@ import com.lemeng.lecloud.model.common.constants.LoginConstants;
 import com.lemeng.lecloud.model.common.exception.SystemException;
 import com.lemeng.lecloud.model.user.UserLogin;
 import com.lemeng.lecloud.utils.common.ObjectPropertyUtils;
+import com.lemeng.lecloud.utils.common.StringUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -38,13 +39,19 @@ public class RedisService {
 
     public <T> T getValue(String key, Class<T> clazz) throws JsonProcessingException, IOException {
         String json = this.redisTemplate.opsForValue().get(key);
-        return this.mapper.readValue(json, clazz);
+        if (!StringUtils.isBlank(json)) {
+            return this.mapper.readValue(json, clazz);
+        }
+        return null;
     }
 
     public UserLogin getUserLogin(String token) {
         try {
             String key = LoginConstants.REDIS_CACHE_LOGIN_TOKEN_KEY + token;
             UserLogin login = this.getValue(key, UserLogin.class);
+            if (login == null) {
+                return null;
+            }
             Date tokenDate = login.getTokenDate();
             Long time = new Date().getTime();
             Long tokenTime = tokenDate.getTime() + LoginConstants.TOKEN_EFFECTIVE_MILLS;

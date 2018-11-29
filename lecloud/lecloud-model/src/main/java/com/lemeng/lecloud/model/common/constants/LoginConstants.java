@@ -10,7 +10,12 @@ public interface LoginConstants {
 	/**
 	 * 登录请求路径
 	 */
-	final String LOGIN_URL = "/login";
+	final String LOGIN_URL = "/user/login";
+
+	/**
+	 * 登录请求路径
+	 */
+	final String REGISTER_URL = "/register/login";
 
 	/**
 	 * token生效时间 30天

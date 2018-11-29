@@ -21,14 +21,6 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
-import com.ws.ume.common.ResultData;
-import com.ws.ume.common.enums.ReturnCodeEnum;
-import com.ws.ume.common.utils.Constants;
-import com.ws.ume.common.utils.RequestUtils;
-import com.ws.ume.common.utils.UserLoginUtils;
-import com.ws.ume.model.UserInfo;
-import com.ws.ume.service.UserInfoService;
-
 public class LoginInterceptor implements HandlerInterceptor {
 
     private static final Log LOGGER = LogFactory.getLog(LoginInterceptor.class);
@@ -38,9 +30,9 @@ public class LoginInterceptor implements HandlerInterceptor {
     @Autowired
     private RedisService redisService;
 
-
     static {
         OUT_URL_LIST.add(LoginConstants.LOGIN_URL);
+        OUT_URL_LIST.add(LoginConstants.REGISTER_URL);
         OUT_URL_LIST.add("*.js|*.css|*.png|*.jpg|*.jpeg|*.mp3|*.mp4");
         OUT_URL_LIST.add("*/error");
         OUT_URL_LIST.add("*index.html");
