@@ -22,16 +22,17 @@ public class ObjectPropertyUtils {
 	 * 判断对象指定属性列表中是否有空值 ：使用时通过错误信息携带相关错误信息,不能使用非get方法获取的属性，如boolean型属性
 	 * 
 	 * 
-	 * @param checkNames
+	 * @param fildNames
+	 * @param fildObj
 	 * @return
 	 * @throws Exception
 	 */
-	public static void checkObjectFildListIsEmpty(String[] fildNames, Object obj) throws Exception {
+	public static void checkObjectFildListIsEmpty(String[] fildNames, Object fildObj) throws Exception {
 		for (String fildName : fildNames) {
 			if (StringUtils.isBlank(fildName)) {
 				throw new Exception("designate fildName can not be empty");
 			}
-			if (checkObjectFildIsEmpty(fildName, obj)) {
+			if (checkObjectFildIsEmpty(fildName, fildObj)) {
 				throw new BizException(fildName + " can not be empty");
 			}
 		}
@@ -53,17 +54,17 @@ public class ObjectPropertyUtils {
 	/**
 	 * 获取对象属性值
 	 * 
-	 * @param obj
-	 * @param field
+	 * @param filedName
+	 * @param fieldObj
 	 * @return
 	 * @throws Exception
 	 */
-	public static Object getFildValue(String filedName, Object obj) {
+	public static Object getFildValue(String filedName, Object fieldObj) {
 		try {
 			String methodName = null;
 			methodName = "get" + StringUtils.setStrFirstCharUpcase(filedName);
-			Method method = obj.getClass().getMethod(methodName);
-			return method.invoke(obj);
+			Method method = fieldObj.getClass().getMethod(methodName);
+			return method.invoke(fieldObj);
 		} catch (NoSuchMethodException e) {
 			LOGGER.error("获取对象属性值出错，SecurityException：" + e.getMessage(), e);
 			throw new SystemException("系统异常：SecurityException，" + e.getMessage(), e);

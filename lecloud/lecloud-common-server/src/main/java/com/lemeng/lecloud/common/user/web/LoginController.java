@@ -41,4 +41,14 @@ public class LoginController {
 		}
 	}
 
+	@RequestMapping("getUserLogin")
+	public ResponseData getUserLogin( String username) {
+		try {
+			return loginService.getUserLogin(username);
+		} catch (Exception e) {
+			LOGGER.error("获取用户登录错误：" + e.getMessage(), e);
+			return ServerInteractionsUtils.getFailReturn(null, e.getMessage());
+		}
+	}
+
 }

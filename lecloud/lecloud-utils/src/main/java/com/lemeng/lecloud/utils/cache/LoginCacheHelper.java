@@ -2,7 +2,7 @@ package com.lemeng.lecloud.utils.cache;
 
 import com.lemeng.lecloud.model.user.UserLogin;
 
-public class LoginThreadCache {
+public class LoginCacheHelper {
 
 	private static ThreadLocal<UserLogin> threadLocal = new ThreadLocal<UserLogin>();
 

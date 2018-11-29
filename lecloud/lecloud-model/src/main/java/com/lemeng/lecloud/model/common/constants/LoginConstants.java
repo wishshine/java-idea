@@ -20,6 +20,6 @@ public interface LoginConstants {
 	/**
 	 *
 	 */
-	final String REDIS_CACHE_LOGIN_KEY="KEY_LOGIN_USER_ID";
+	final String REDIS_CACHE_LOGIN_TOKEN_KEY="KEY_LOGIN_USER_TOKEN";
 
 }

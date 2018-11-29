@@ -21,9 +21,9 @@ import org.slf4j.LoggerFactory;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
-public class RequestUtils {
+public class HttpHelper {
 
-    private final static Logger LOGGER = LoggerFactory.getLogger(RequestUtils.class);
+    private final static Logger LOGGER = LoggerFactory.getLogger(HttpHelper.class);
 
     private final static int SOCKET_TIMEOUT = 25000;// 请求超时时间
     private final static int CONNECT_TIMEOUT = 30000;// 传输超时时间
@@ -156,7 +156,7 @@ public class RequestUtils {
 
     public static void main(String[] args) throws Exception {
         String url = "http://localhost:7788/getJson/url.kh.weixin.push/?link_url=http%3A%2F%2Fm.ctsec.com%2Fkh.html&account=13510009482&template_key=OPENTM207514315&weixin_pk=gh_a6b2a0632f21&account_type=2&send_data=%7B%27first%27%3A%7B%27color%27%3A%27%23173177%27%2C%27value%27%3A%27%E5%BC%80%E6%88%B7%E5%AE%A1%E6%A0%B8%E5%A4%B1%E8%B4%A5%E6%8F%90%E9%86%92%27%7D%2C%27keyword1%27%3A%7B%27color%27%3A%27%23173177%27%2C%27value%27%3A%27%E8%AF%81%E5%88%B8%E5%BC%80%E6%88%B7%27%7D%2C%27keyword2%27%3A%7B%27color%27%3A%27%23173177%27%2C%27value%27%3A%27%24date%24%27%7D%2C%27keyword3%27%3A%7B%27color%27%3A%27%23173177%27%2C%27value%27%3A%27%E6%82%A8%E6%8F%90%E4%BA%A4%E7%9A%84%E5%BC%80%E6%88%B7%E4%BF%A1%E6%81%AF%E9%83%A8%E5%88%86%E6%9C%89%E8%AF%AF%27%7D%2C%27keyword4%27%3A%7B%27color%27%3A%27%23173177%27%2C%27value%27%3A%27%E8%AF%B7%E7%99%BB%E5%BD%95%E8%B4%A2%E9%80%9A%E8%AF%81%E5%88%B8APP-%E5%BC%80%E6%88%B7%E9%A6%96%E9%A1%B5%EF%BC%8C%E7%BB%A7%E7%BB%AD%E5%BC%80%E6%88%B7%E4%BF%AE%E6%94%B9%E7%9B%B8%E5%85%B3%E4%BF%A1%E6%81%AF%E5%90%8E%E9%87%8D%E6%96%B0%E6%8F%90%E4%BA%A4%E3%80%82%27%7D%2C%27remark%27%3A%7B%27color%27%3A%27%23173177%27%2C%27value%27%3A%27%E7%82%B9%E5%87%BB%E4%B8%8B%E8%BD%BDAPP%E4%BF%AE%E6%94%B9%3E%3E%27%7D%7D";
-        String res = RequestUtils.doGetByUrl(url);
+        String res = HttpHelper.doGetByUrl(url);
         System.out.println(res);
         System.out.println(setResponseStrToMap(res));
     }

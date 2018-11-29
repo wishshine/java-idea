@@ -1,5 +1,10 @@
 package com.lemeng.lecloud.ume.service.impl;
 
+import com.lemeng.lecloud.model.common.constants.LoginConstants;
+import com.lemeng.lecloud.model.common.enums.ReturnCodeEnum;
+import com.lemeng.lecloud.model.common.exception.BizException;
+import com.lemeng.lecloud.model.user.UserLogin;
+import com.lemeng.lecloud.utils.common.ObjectPropertyUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -14,21 +19,35 @@ import com.lemeng.lecloud.utils.server.ServerInteractionsUtils;
 @Service
 public class UserLoginServiceImpl implements UserLoginService {
 
-	private final static Logger LOGGER = LoggerFactory.getLogger(UserLoginServiceImpl.class);
+    private final static Logger LOGGER = LoggerFactory.getLogger(UserLoginServiceImpl.class);
 
-	@Autowired
-	private UserApiService userApiService;
+    @Autowired
+    private UserApiService userApiService;
 
-	@Override
-	public ResponseData userRegister(UserLoginVO userLogin) throws Exception {
+    @Override
+    public ResponseData userRegister(UserLoginVO userLogin) throws Exception {
+        // 校验非空，当判断有空值时，直接抛出异常
+        String[] fildNames = {"username", "password", "rePassword"};
+        ObjectPropertyUtils.checkObjectFildListIsEmpty(fildNames, userLogin);
+        // 校验
+        String password = userLogin.getPassword();
+        String rePassword = userLogin.getRePassword();
+        if (!password.equals(rePassword)) {
+            throw new BizException("两次密码不一致，请重新输入");
+        }
+        String username = userLogin.getUsername();
+        ResponseData responseData = userApiService.getUserLogin(username);
+        if (ReturnCodeEnum.SUCC.code.equals(responseData.getCode()) && responseData.getData() != null) {
+            return userApiService.userRegister(userLogin);
+        } else {
+            throw new BizException(responseData.getMsg());
+        }
+    }
 
-		return ServerInteractionsUtils.getSuccReturn(null, "注册成功！");
-	}
+    @Override
+    public ResponseData userLogin(UserLoginVO userLogin) throws Exception {
 
-	@Override
-	public ResponseData userLogin(UserLoginVO userLogin) throws Exception {
-		
-		return userApiService.userLogin(userLogin);
-	}
+        return userApiService.userLogin(userLogin);
+    }
 
 }
