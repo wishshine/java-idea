@@ -37,10 +37,11 @@ public class UserLoginServiceImpl implements UserLoginService {
         }
         String username = userLogin.getUsername();
         ResponseData responseData = userApiService.getUserLogin(username);
-        if (ReturnCodeEnum.SUCC.code.equals(responseData.getCode()) && responseData.getData() != null) {
+        if (ReturnCodeEnum.FAIL.getCode().equals(responseData.getCode()) && responseData.getData() == null) {
+            LOGGER.info("username:"+username+"没有被注册，可以注册");
             return userApiService.userRegister(userLogin);
         } else {
-            throw new BizException(responseData.getMsg());
+            throw new BizException("已经存在该用户，注册失败");
         }
     }
 

@@ -8,7 +8,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
     <artifactId>lecloud-ume-server</artifactId>
-    <name>lecloud-ume</name>
+    <name>lecloud-ume-server</name>
     <url>http://maven.apache.org</url>
 
     <dependencies>
