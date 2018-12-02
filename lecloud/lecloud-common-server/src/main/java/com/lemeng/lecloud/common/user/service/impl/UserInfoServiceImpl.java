@@ -1,7 +1,6 @@
 package com.lemeng.lecloud.common.user.service.impl;
 
 import com.lemeng.lecloud.common.user.dao.UserInfoMapper;
-import com.lemeng.lecloud.common.user.dao.UserLoginMapper;
 import com.lemeng.lecloud.common.user.service.UserInfoService;
 import com.lemeng.lecloud.model.common.ResponseData;
 import com.lemeng.lecloud.model.common.exception.BizException;
@@ -10,7 +9,9 @@ import com.lemeng.lecloud.utils.server.ServerInteractionsUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
 
+@Service
 public class UserInfoServiceImpl implements UserInfoService {
 
 

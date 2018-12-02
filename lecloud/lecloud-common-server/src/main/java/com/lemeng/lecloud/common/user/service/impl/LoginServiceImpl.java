@@ -69,7 +69,7 @@ public class LoginServiceImpl implements LoginService {
         userLoginMapper.insert(insertLogin);// 新增数据
         //初始化userInfo
         long id = SerialNumberUtils.getSysNumUuid();
-        UserInfo insertInfo=new UserInfo();
+        UserInfo insertInfo = new UserInfo();
         insertInfo.setId(id);
         insertInfo.setUserId(userId);
         insertInfo.setNickName(username);
@@ -78,7 +78,7 @@ public class LoginServiceImpl implements LoginService {
         // 去掉密码返回
         insertLogin.setPassword(null);
         //将用户信息与token关联关系放入token中
-        redisService.addValue(LoginConstants.REDIS_CACHE_LOGIN_TOKEN_KEY + userId, userLogin);
+        redisService.addValue(LoginConstants.REDIS_CACHE_LOGIN_TOKEN_KEY + token, userLogin);
         return ServerInteractionsUtils.getSuccReturn(insertLogin, "注册成功！");
     }
 
@@ -93,20 +93,20 @@ public class LoginServiceImpl implements LoginService {
         }
         // 去掉密码返回
         login.setPassword(null);
-        redisService.addValue(LoginConstants.REDIS_CACHE_LOGIN_TOKEN_KEY + login.getUserId(), login);
+        redisService.addValue(LoginConstants.REDIS_CACHE_LOGIN_TOKEN_KEY + login.getToken(), login);
         return ServerInteractionsUtils.getSuccReturn(login, "登录成功！");
     }
 
     @Override
-    public ResponseData getUserLogin(String username) throws Exception{
-        if(StringUtils.isNotBlank(username)){
+    public ResponseData getUserLogin(String username) throws Exception {
+        if (StringUtils.isNotBlank(username)) {
             throw new BizException("用户名不能为空");
         }
-        UserLogin userLogin= userLoginMapper.selectByUsername(username);
-        if(userLogin==null){
+        UserLogin userLogin = userLoginMapper.selectByUsername(username);
+        if (userLogin == null) {
             throw new BizException("用户不存在");
         }
-        return ServerInteractionsUtils.getSuccReturn(userLogin,"获取用户成功");
+        return ServerInteractionsUtils.getSuccReturn(userLogin, "获取用户成功");
     }
 
 }
