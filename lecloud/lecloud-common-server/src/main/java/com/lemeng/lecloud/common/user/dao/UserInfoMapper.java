@@ -14,4 +14,11 @@ public interface UserInfoMapper {
     int updateByPrimaryKeySelective(UserInfo record);
 
     int updateByPrimaryKey(UserInfo record);
+
+    /**
+     * 获取用户信息
+     * @param userId
+     * @return
+     */
+    UserInfo selectByUserId(Long userId);
 }

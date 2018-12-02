@@ -66,7 +66,7 @@ public class LoginInterceptor implements HandlerInterceptor {
             ResponseData result = ServerInteractionsUtils.getLoginFailReturn("未登录或登录已失效，请重新登录");
             ServerInteractionsUtils.setResponseJSON(response, result);//设置response返回
         }
-        LoginCacheHelper.setCurrentUser(userLogin);// 讲用户信息放到当前线程变量中
+        LoginCacheHelper.setCurrentUserLogin(userLogin);// 讲用户信息放到当前线程变量中
         return true;
     }
 

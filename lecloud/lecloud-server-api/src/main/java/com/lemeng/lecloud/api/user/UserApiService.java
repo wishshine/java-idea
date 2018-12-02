@@ -1,5 +1,6 @@
 package com.lemeng.lecloud.api.user;
 
+import com.lemeng.lecloud.model.user.UserInfo;
 import org.springframework.cloud.openfeign.FeignClient;
 import org.springframework.web.bind.annotation.RequestMapping;
 
@@ -40,5 +41,23 @@ public interface UserApiService {
      */
     @RequestMapping(value = "/user/getUserLogin")
     ResponseData getUserLogin(String username);
+
+    /**
+     * 获取用户信息
+     *
+     * @param userId
+     * @return
+     */
+    @RequestMapping(value = "/userInfo/getUserInfo")
+    ResponseData getUserInfo(Long userId);
+
+    /**
+     * 获取用户信息
+     *
+     * @param userInfo
+     * @return
+     */
+    @RequestMapping(value = "/userInfo/updateUserInfo")
+    ResponseData updateUserInfo(UserInfo userInfo);
 
 }

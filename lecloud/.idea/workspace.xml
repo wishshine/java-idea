@@ -1,0 +1,885 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="599428bb-4772-4633-8a6d-4ddb24594b19" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/lecloud-model/target/" />
+    <ignored path="$PROJECT_DIR$/lecloud-server-manager/target/" />
+    <ignored path="$PROJECT_DIR$/lecloud-ume-server/target/" />
+    <ignored path="$PROJECT_DIR$/target/" />
+    <ignored path="$PROJECT_DIR$/lecloud-server-api/target/" />
+    <ignored path="$PROJECT_DIR$/lecloud-utils/target/" />
+    <ignored path="$PROJECT_DIR$/lecloud-common-server/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FavoritesManager">
+    <favorites_list name="lecloud" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="UserInfoController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lecloud-common-server/src/main/java/com/lemeng/lecloud/common/user/web/UserInfoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="249">
+              <caret line="35" column="38" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="38" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lecloud-ume-server/src/main/java/com/lemeng/lecloud/ume/web/UserController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="293">
+              <caret line="45" column="34" lean-forward="true" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserServiceImpl.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lecloud-ume-server/src/main/java/com/lemeng/lecloud/ume/service/impl/UserServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="86" column="20" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ServerInteractionsUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lecloud-utils/src/main/java/com/lemeng/lecloud/utils/server/ServerInteractionsUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="95" column="39" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginCacheHelper.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lecloud-utils/src/main/java/com/lemeng/lecloud/utils/cache/LoginCacheHelper.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="220">
+              <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ObjectPropertyUtils.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lecloud-utils/src/main/java/com/lemeng/lecloud/utils/common/ObjectPropertyUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1342">
+              <caret line="76" column="6" lean-forward="true" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="LoginInterceptor.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lecloud-ume-server/src/main/java/com/lemeng/lecloud/ume/interceptor/LoginInterceptor.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="224">
+              <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lecloud-ume-server/src/main/java/com/lemeng/lecloud/ume/service/UserService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="409">
+              <caret line="40" column="49" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="49" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserInfoServiceImpl.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lecloud-common-server/src/main/java/com/lemeng/lecloud/common/user/service/impl/UserInfoServiceImpl.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="299">
+              <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="UserApiService.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lecloud-server-api/src/main/java/com/lemeng/lecloud/api/user/UserApiService.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="60" column="31" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="31" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>·</find>
+    </findStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/lecloud-common-server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/lecloud-model/src/main/java/com/lemeng/lecloud/model/common/constants/LoginConstants.java" />
+        <option value="$PROJECT_DIR$/lecloud-ume-server/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/lecloud-ume-server/pom.xml" />
+        <option value="$PROJECT_DIR$/lecloud-ume-server/src/main/java/com/lemeng/lecloud/ume/service/impl/UserLoginServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lecloud-ume-server/src/main/java/com/lemeng/lecloud/UmeApplicationStartUp.java" />
+        <option value="$PROJECT_DIR$/lecloud-common-server/src/main/java/com/lemeng/lecloud/common/user/service/impl/UserInfoService.java" />
+        <option value="$PROJECT_DIR$/lecloud-common-server/src/main/java/com/lemeng/lecloud/common/user/dao/UserInfoMapper.java" />
+        <option value="$PROJECT_DIR$/lecloud-common-server/src/main/resources/mybatis/mapper/user/UserInfoMapper.xml" />
+        <option value="$PROJECT_DIR$/lecloud-common-server/src/main/java/com/lemeng/lecloud/common/user/service/impl/UserInfoServiceImpl.java" />
+        <option value="$PROJECT_DIR$/lecloud-common-server/src/main/java/com/lemeng/lecloud/common/user/service/UserInfoService.java" />
+        <option value="$PROJECT_DIR$/lecloud-common-server/src/main/java/com/lemeng/lecloud/common/user/web/UserInfoController.java" />
+        <option value="$PROJECT_DIR$/lecloud-server-api/src/main/java/com/lemeng/lecloud/api/user/UserApiService.java" />
+        <option value="$PROJECT_DIR$/lecloud-ume-server/src/main/java/com/lemeng/lecloud/ume/web/UserController.java" />
+        <option value="$PROJECT_DIR$/lecloud-utils/src/main/java/com/lemeng/lecloud/utils/cache/LoginCacheHelper.java" />
+        <option value="$PROJECT_DIR$/lecloud-ume-server/src/main/java/com/lemeng/lecloud/ume/interceptor/LoginInterceptor.java" />
+        <option value="$PROJECT_DIR$/lecloud-ume-server/src/main/java/com/lemeng/lecloud/ume/service/UserService.java" />
+        <option value="$PROJECT_DIR$/lecloud-utils/src/main/java/com/lemeng/lecloud/utils/common/ObjectPropertyUtils.java" />
+        <option value="$PROJECT_DIR$/lecloud-ume-server/src/main/java/com/lemeng/lecloud/ume/service/impl/UserServiceImpl.java" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="mavenHome" value="$APPLICATION_HOME_DIR$/plugins/maven/lib/maven3" />
+        <option name="userSettingsFile" value="D:\DeveloperSoftware\Apache\Maven\apache-maven-3.5.2\conf\settings.xml" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <expand>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="lecloud" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="lecloud" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="lecloud-model" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="lecloud-model" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="lecloud-ume-server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+        </path>
+        <path>
+          <item name="" type="16c1761:MavenProjectsStructure$RootNode" />
+          <item name="lecloud-ume-server" type="9519ce18:MavenProjectsStructure$ProjectNode" />
+          <item name="Lifecycle" type="58874e2:MavenProjectsStructure$LifecycleNode" />
+        </path>
+      </expand>
+      <select />
+    </treeState>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="54" />
+    <option name="y" value="36" />
+    <option name="width" value="1890" />
+    <option name="height" value="951" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="PackagesPane" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="lecloud" type="b2602c69:ProjectViewProjectNode" />
+              <item name="lecloud" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="PackagesPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="lecloud" type="58d84e3e:PackageViewProjectNode" />
+              <item name="lecloud-common-server" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="lecloud" type="58d84e3e:PackageViewProjectNode" />
+              <item name="lecloud-common-server" type="616d4139:PackageViewModuleNode" />
+              <item name="com.lemeng.lecloud" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="lecloud" type="58d84e3e:PackageViewProjectNode" />
+              <item name="lecloud-common-server" type="616d4139:PackageViewModuleNode" />
+              <item name="com.lemeng.lecloud" type="1f31426a:PackageElementNode" />
+              <item name="common" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="lecloud" type="58d84e3e:PackageViewProjectNode" />
+              <item name="lecloud-common-server" type="616d4139:PackageViewModuleNode" />
+              <item name="com.lemeng.lecloud" type="1f31426a:PackageElementNode" />
+              <item name="common" type="1f31426a:PackageElementNode" />
+              <item name="user" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="lecloud" type="58d84e3e:PackageViewProjectNode" />
+              <item name="lecloud-server-api" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="lecloud" type="58d84e3e:PackageViewProjectNode" />
+              <item name="lecloud-server-api" type="616d4139:PackageViewModuleNode" />
+              <item name="com.lemeng.lecloud.api.user" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="lecloud" type="58d84e3e:PackageViewProjectNode" />
+              <item name="lecloud-ume-server" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="lecloud" type="58d84e3e:PackageViewProjectNode" />
+              <item name="lecloud-ume-server" type="616d4139:PackageViewModuleNode" />
+              <item name="com.lemeng.lecloud" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="lecloud" type="58d84e3e:PackageViewProjectNode" />
+              <item name="lecloud-ume-server" type="616d4139:PackageViewModuleNode" />
+              <item name="com.lemeng.lecloud" type="1f31426a:PackageElementNode" />
+              <item name="ume" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="lecloud" type="58d84e3e:PackageViewProjectNode" />
+              <item name="lecloud-ume-server" type="616d4139:PackageViewModuleNode" />
+              <item name="com.lemeng.lecloud" type="1f31426a:PackageElementNode" />
+              <item name="ume" type="1f31426a:PackageElementNode" />
+              <item name="interceptor" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="lecloud" type="58d84e3e:PackageViewProjectNode" />
+              <item name="lecloud-ume-server" type="616d4139:PackageViewModuleNode" />
+              <item name="com.lemeng.lecloud" type="1f31426a:PackageElementNode" />
+              <item name="ume" type="1f31426a:PackageElementNode" />
+              <item name="service" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="lecloud" type="58d84e3e:PackageViewProjectNode" />
+              <item name="lecloud-ume-server" type="616d4139:PackageViewModuleNode" />
+              <item name="com.lemeng.lecloud" type="1f31426a:PackageElementNode" />
+              <item name="ume" type="1f31426a:PackageElementNode" />
+              <item name="service" type="1f31426a:PackageElementNode" />
+              <item name="impl" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="lecloud" type="58d84e3e:PackageViewProjectNode" />
+              <item name="lecloud-ume-server" type="616d4139:PackageViewModuleNode" />
+              <item name="com.lemeng.lecloud" type="1f31426a:PackageElementNode" />
+              <item name="ume" type="1f31426a:PackageElementNode" />
+              <item name="web" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="lecloud" type="58d84e3e:PackageViewProjectNode" />
+              <item name="lecloud-utils" type="616d4139:PackageViewModuleNode" />
+            </path>
+            <path>
+              <item name="lecloud" type="58d84e3e:PackageViewProjectNode" />
+              <item name="lecloud-utils" type="616d4139:PackageViewModuleNode" />
+              <item name="com.lemeng.lecloud.utils" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="lecloud" type="58d84e3e:PackageViewProjectNode" />
+              <item name="lecloud-utils" type="616d4139:PackageViewModuleNode" />
+              <item name="com.lemeng.lecloud.utils" type="1f31426a:PackageElementNode" />
+              <item name="cache" type="1f31426a:PackageElementNode" />
+            </path>
+            <path>
+              <item name="lecloud" type="58d84e3e:PackageViewProjectNode" />
+              <item name="lecloud-utils" type="616d4139:PackageViewModuleNode" />
+              <item name="com.lemeng.lecloud.utils" type="1f31426a:PackageElementNode" />
+              <item name="server" type="1f31426a:PackageElementNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+      <pane id="AndroidView" />
+      <pane id="Scope">
+        <subPane subId="Project Files">
+          <expand>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="lecloud" type="cbb8eebc:String" user="lecloud" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="lecloud-common-server" type="cbb8eebc:String" user="lecloud-common-server" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="lecloud-common-server" type="cbb8eebc:String" user="lecloud-common-server" />
+              <item name="lecloud-common-server" type="cbb8eebc:String" user="lecloud-common-server" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="lecloud-common-server" type="cbb8eebc:String" user="lecloud-common-server" />
+              <item name="lecloud-common-server" type="cbb8eebc:String" user="lecloud-common-server" />
+              <item name="src/main" type="cbb8eebc:String" user="src/main" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="lecloud-common-server" type="cbb8eebc:String" user="lecloud-common-server" />
+              <item name="lecloud-common-server" type="cbb8eebc:String" user="lecloud-common-server" />
+              <item name="src/main" type="cbb8eebc:String" user="src/main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="lecloud-common-server" type="cbb8eebc:String" user="lecloud-common-server" />
+              <item name="lecloud-common-server" type="cbb8eebc:String" user="lecloud-common-server" />
+              <item name="src/main" type="cbb8eebc:String" user="src/main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="com/lemeng/lecloud" type="cbb8eebc:String" user="com/lemeng/lecloud" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="lecloud-common-server" type="cbb8eebc:String" user="lecloud-common-server" />
+              <item name="lecloud-common-server" type="cbb8eebc:String" user="lecloud-common-server" />
+              <item name="src/main" type="cbb8eebc:String" user="src/main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="com/lemeng/lecloud" type="cbb8eebc:String" user="com/lemeng/lecloud" />
+              <item name="common" type="cbb8eebc:String" user="common" />
+            </path>
+            <path>
+              <item name="Root" type="cbb8eebc:String" user="Root" />
+              <item name="lecloud-common-server" type="cbb8eebc:String" user="lecloud-common-server" />
+              <item name="lecloud-common-server" type="cbb8eebc:String" user="lecloud-common-server" />
+              <item name="src/main" type="cbb8eebc:String" user="src/main" />
+              <item name="java" type="cbb8eebc:String" user="java" />
+              <item name="com/lemeng/lecloud" type="cbb8eebc:String" user="com/lemeng/lecloud" />
+              <item name="common" type="cbb8eebc:String" user="common" />
+              <item name="chat/dao" type="cbb8eebc:String" user="chat/dao" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/lecloud-common-server" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="MavenSettings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.lemeng.lecloud.common.user.web" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="Application.CommonServerApplicationStartUp">
+    <configuration name="CommonServerApplicationStartUp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lemeng.lecloud.CommonServerApplicationStartUp" />
+      <module name="lecloud-common-server" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lemeng.lecloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration name="UmeApplicationStartUp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.lemeng.lecloud.UmeApplicationStartUp" />
+      <module name="lecloud-ume-server" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.lemeng.lecloud.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+    </configuration>
+    <configuration default="true" type="JUnit" factoryName="JUnit">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration default="true" type="TestNG" factoryName="TestNG">
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="SUITE_NAME" />
+      <option name="PACKAGE_NAME" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="METHOD_NAME" />
+      <option name="GROUP_NAME" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="OUTPUT_DIRECTORY" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <option name="USE_DEFAULT_REPORTERS" value="false" />
+      <option name="PROPERTIES_FILE" />
+      <properties />
+      <listeners />
+    </configuration>
+    <list>
+      <item itemvalue="Application.UmeApplicationStartUp" />
+      <item itemvalue="Application.CommonServerApplicationStartUp" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.CommonServerApplicationStartUp" />
+        <item itemvalue="Application.UmeApplicationStartUp" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="599428bb-4772-4633-8a6d-4ddb24594b19" name="Default" comment="" />
+      <created>1543736726417</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1543736726417</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1295" height="704" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32922536" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" weight="0.2490242" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.27580371" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.32922536" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.5842391" visible="true" weight="0.2583919" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24980484" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.2673435" />
+      <window_info id="Structure" order="1" sideWeight="0.5013123" side_tool="true" weight="0.2061439" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" sideWeight="0.41576087" side_tool="true" weight="0.19906323" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.6302817" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Messages" order="7" />
+    </layout>
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/lecloud-ume-server/src/main/java/com/lemeng/lecloud/UmeApplicationStartUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" column="1" lean-forward="true" selection-start-line="18" selection-start-column="1" selection-end-line="18" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-ume-server/src/main/java/com/lemeng/lecloud/ume/web/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="26" column="38" selection-start-line="26" selection-start-column="38" selection-end-line="26" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-ume-server/src/main/java/com/lemeng/lecloud/ume/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="660">
+          <caret line="44" column="9" selection-start-line="44" selection-start-column="9" selection-end-line="44" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-common-server/src/main/java/com/lemeng/lecloud/common/user/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="12" column="24" selection-start-line="12" selection-start-column="24" selection-end-line="12" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-common-server/src/main/java/com/lemeng/lecloud/common/user/service/impl/LoginServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1980">
+          <caret line="112" selection-start-line="112" selection-end-line="112" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-common-server/src/main/java/com/lemeng/lecloud/common/user/web/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="49" column="42" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-server-api/src/main/java/com/lemeng/lecloud/api/user/UserApiService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="792">
+          <caret line="41" column="24" selection-start-line="41" selection-start-column="24" selection-end-line="41" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-ume-server/src/main/java/com/lemeng/lecloud/UmeApplicationStartUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="396">
+          <caret line="18" lean-forward="true" selection-start-line="18" selection-end-line="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-ume-server/src/main/java/com/lemeng/lecloud/UmeApplicationStartUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="17" column="1" selection-start-line="17" selection-end-line="17" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-common-server/src/main/java/com/lemeng/lecloud/CommonServerApplicationStartUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="16" column="1" selection-start-line="16" selection-start-column="1" selection-end-line="16" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-ume-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="167">
+          <caret line="27" column="9" lean-forward="true" selection-start-line="27" selection-start-column="9" selection-end-line="27" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-common-server/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="29" column="43" selection-start-line="29" selection-start-column="43" selection-end-line="29" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-model/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="13" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-common-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="9" column="50" selection-start-line="9" selection-start-column="50" selection-end-line="9" selection-end-column="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-ume-server/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="132">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-model/src/main/java/com/lemeng/lecloud/model/common/constants/LoginConstants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-common-server/src/main/java/com/lemeng/lecloud/common/user/web/LoginController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="858">
+          <caret line="49" column="42" selection-start-line="49" selection-start-column="19" selection-end-line="49" selection-end-column="42" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://D:/DeveloperSoftware/Apache/Maven/Repository/com/netflix/ribbon/ribbon-loadbalancer/2.2.5/ribbon-loadbalancer-2.2.5.jar!/com/netflix/loadbalancer/reactive/LoadBalancerCommand.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="103">
+          <caret line="82" selection-start-line="82" selection-end-line="82" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-ume-server/src/main/java/com/lemeng/lecloud/UmeApplicationStartUp.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="286">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-common-server/src/main/java/com/lemeng/lecloud/common/user/dao/UserLoginMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="242">
+          <caret line="12" column="44" selection-start-line="12" selection-start-column="33" selection-end-line="12" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-common-server/src/main/java/com/lemeng/lecloud/common/user/service/LoginService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="23" column="67" lean-forward="true" selection-start-line="16" selection-start-column="4" selection-end-line="23" selection-end-column="67" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-common-server/src/main/java/com/lemeng/lecloud/common/user/service/impl/LoginServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="81" column="75" lean-forward="true" selection-start-line="81" selection-start-column="8" selection-end-line="81" selection-end-column="75" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-common-server/src/main/resources/mybatis/mapper/user/UserInfoMapper.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="161">
+          <caret line="29" lean-forward="true" selection-start-line="29" selection-end-line="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-common-server/src/main/resources/mybatis/mapper/chat/UserLinkmanRelationMapper.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-common-server/src/main/java/com/lemeng/lecloud/common/user/dao/UserInfoMapper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="15" column="44" lean-forward="true" selection-start-line="15" selection-start-column="44" selection-end-line="15" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-common-server/src/main/java/com/lemeng/lecloud/common/user/web/UserInfoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="35" column="38" selection-start-line="35" selection-start-column="24" selection-end-line="35" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-ume-server/src/main/java/com/lemeng/lecloud/ume/interceptor/LoginInterceptor.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="70" column="5" lean-forward="true" selection-start-line="70" selection-start-column="5" selection-end-line="70" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-ume-server/src/main/java/com/lemeng/lecloud/ume/web/UserController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="45" column="34" lean-forward="true" selection-start-line="45" selection-start-column="34" selection-end-line="45" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-common-server/src/main/java/com/lemeng/lecloud/common/user/service/UserInfoService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="321">
+          <caret line="22" column="24" lean-forward="true" selection-start-line="22" selection-start-column="24" selection-end-line="22" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-server-api/src/main/java/com/lemeng/lecloud/api/user/UserApiService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="60" column="31" selection-start-line="60" selection-start-column="17" selection-end-line="60" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-ume-server/src/main/java/com/lemeng/lecloud/ume/service/UserService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="409">
+          <caret line="40" column="49" lean-forward="true" selection-start-line="40" selection-start-column="32" selection-end-line="40" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-utils/src/main/java/com/lemeng/lecloud/utils/common/ObjectPropertyUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1342">
+          <caret line="76" column="6" lean-forward="true" selection-start-line="76" selection-start-column="6" selection-end-line="76" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-common-server/src/main/java/com/lemeng/lecloud/common/user/service/impl/UserInfoServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="35" column="9" lean-forward="true" selection-start-line="35" selection-start-column="9" selection-end-line="35" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-utils/src/main/java/com/lemeng/lecloud/utils/server/ServerInteractionsUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="95" column="39" selection-start-line="95" selection-start-column="26" selection-end-line="95" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-utils/src/main/java/com/lemeng/lecloud/utils/cache/LoginCacheHelper.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="13" column="33" lean-forward="true" selection-start-line="13" selection-start-column="33" selection-end-line="13" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lecloud-ume-server/src/main/java/com/lemeng/lecloud/ume/service/impl/UserServiceImpl.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="86" column="20" selection-start-line="86" selection-start-column="20" selection-end-line="86" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>No facets are configured</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>jdk_1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>lecloud</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>jdk_1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: antlr:antlr:2.7.7</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
