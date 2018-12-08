@@ -2,11 +2,14 @@ package com.lemeng.lecloud.api.user;
 
 import com.lemeng.lecloud.model.user.UserInfo;
 import org.springframework.cloud.openfeign.FeignClient;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import com.lemeng.lecloud.model.common.ResponseData;
 import com.lemeng.lecloud.model.common.constants.ApplicationNameConstants;
 import com.lemeng.lecloud.model.user.vo.UserLoginVO;
+import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 /**
  * @author WL-PC
@@ -20,8 +23,8 @@ public interface UserApiService {
      * @param login
      * @return
      */
-    @RequestMapping(value = "/user/login")
-    ResponseData userLogin(UserLoginVO login);
+    @RequestMapping(value = "/user/login", method = RequestMethod.POST)
+    ResponseData userLogin(@RequestBody UserLoginVO login);
 
     /**
      * 用户注册
@@ -29,8 +32,8 @@ public interface UserApiService {
      * @param login
      * @return
      */
-    @RequestMapping(value = "/user/register")
-    ResponseData userRegister(UserLoginVO login);
+    @RequestMapping(value = "/user/register", method = RequestMethod.POST)
+    ResponseData userRegister(@RequestBody UserLoginVO login);
 
 
     /**
@@ -39,8 +42,8 @@ public interface UserApiService {
      * @param username
      * @return
      */
-    @RequestMapping(value = "/user/getUserLogin")
-    ResponseData getUserLogin(String username);
+    @RequestMapping(value = "/user/getUserLogin", method = RequestMethod.GET)
+    ResponseData getUserLogin(@RequestParam("username") String username);
 
     /**
      * 获取用户信息
@@ -48,8 +51,8 @@ public interface UserApiService {
      * @param userId
      * @return
      */
-    @RequestMapping(value = "/userInfo/getUserInfo")
-    ResponseData getUserInfo(Long userId);
+    @RequestMapping(value = "/userInfo/getUserInfo", method = RequestMethod.GET)
+    ResponseData getUserInfo(@RequestParam("userId") Long userId);
 
     /**
      * 获取用户信息
@@ -57,7 +60,7 @@ public interface UserApiService {
      * @param userInfo
      * @return
      */
-    @RequestMapping(value = "/userInfo/updateUserInfo")
-    ResponseData updateUserInfo(UserInfo userInfo);
+    @RequestMapping(value = "/userInfo/updateUserInfo", method = RequestMethod.POST)
+    ResponseData updateUserInfo(@RequestBody UserInfo userInfo);
 
 }

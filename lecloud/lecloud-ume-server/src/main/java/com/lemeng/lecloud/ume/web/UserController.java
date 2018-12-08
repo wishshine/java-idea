@@ -48,7 +48,7 @@ public class UserController {
         try {
             return userService.getUserInfo();
         } catch (Exception e) {
-            LOGGER.error("用户登录错误：" + e.getMessage(), e);
+            LOGGER.error("获取用户信息错误：" + e.getMessage(), e);
             return ServerInteractionsUtils.getFailReturn(null, e.getMessage());
         }
     }
