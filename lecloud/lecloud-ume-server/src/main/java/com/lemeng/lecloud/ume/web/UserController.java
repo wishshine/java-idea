@@ -1,5 +1,6 @@
 package com.lemeng.lecloud.ume.web;
 
+import com.lemeng.lecloud.model.user.UserInfo;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -49,6 +50,16 @@ public class UserController {
             return userService.getUserInfo();
         } catch (Exception e) {
             LOGGER.error("获取用户信息错误：" + e.getMessage(), e);
+            return ServerInteractionsUtils.getFailReturn(null, e.getMessage());
+        }
+    }
+
+    @RequestMapping("updateUserInfo")
+    public ResponseData updateUserInfo(@RequestBody UserInfo userInfo) {
+        try {
+            return userService.updateUserInfo(userInfo);
+        } catch (Exception e) {
+            LOGGER.error("保存用户信息错误：" + e.getMessage(), e);
             return ServerInteractionsUtils.getFailReturn(null, e.getMessage());
         }
     }
