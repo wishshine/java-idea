@@ -25,8 +25,8 @@ public class UserInfoServiceImpl implements UserInfoService {
         if(userId==null){
             throw new BizException("userId为空");
         }
-        UserInfo userInfo=userInfoMapper.selectByPrimaryKey(userId);
-        return ServerInteractionsUtils.getSuccReturn(userInfo, "注册成功！");
+        UserInfo userInfo=userInfoMapper.selectByUserId(userId);
+        return ServerInteractionsUtils.getSuccReturn(userInfo, "ok");
     }
 
 

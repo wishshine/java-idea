@@ -73,12 +73,14 @@ public class LoginServiceImpl implements LoginService {
         insertInfo.setId(id);
         insertInfo.setUserId(userId);
         insertInfo.setNickName(username);
+        insertInfo.setCreateDate(new Date());
+        insertInfo.setUpdateDate(new Date());
         userInfoMapper.insert(insertInfo);//新增数据
         LOGGER.info("username:" + username + "注册成功！");
         // 去掉密码返回
         insertLogin.setPassword(null);
         //将用户信息与token关联关系放入token中
-        redisService.addValue(LoginConstants.REDIS_CACHE_LOGIN_TOKEN_KEY + token, userLogin);
+        redisService.addValue(LoginConstants.REDIS_CACHE_LOGIN_TOKEN_KEY + token, insertLogin);
         return ServerInteractionsUtils.getSuccReturn(insertLogin, "注册成功！");
     }
 
