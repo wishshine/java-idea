@@ -17,6 +17,7 @@
         <module>lecloud-common-server</module>
         <module>lecloud-server-api</module>
         <module>lecloud-ume-server</module>
+        <module>lecloud-netdisk-server</module>
     </modules>
 
     <properties>

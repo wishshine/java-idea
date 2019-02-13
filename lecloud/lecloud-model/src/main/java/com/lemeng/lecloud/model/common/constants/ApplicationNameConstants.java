@@ -16,4 +16,10 @@ public interface ApplicationNameConstants {
 	 */
 	final String UME_SERVER = "ume-server";
 
+
+	/**
+	 * 网盘服务
+	 */
+	final String NETDISK_SERVER = "netdisk-server";
+
 }

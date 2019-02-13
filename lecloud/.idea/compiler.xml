@@ -8,11 +8,22 @@
         <outputRelativeToContentRoot value="true" />
         <module name="lecloud-common-server" />
         <module name="lecloud-model" />
+        <module name="lecloud-netdisk-server" />
         <module name="lecloud-server-api" />
         <module name="lecloud-server-manager" />
         <module name="lecloud-ume-server" />
         <module name="lecloud-utils" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="lecloud" target="1.8" />
+      <module name="lecloud-common-server" target="1.8" />
+      <module name="lecloud-model" target="1.8" />
+      <module name="lecloud-netdisk-server" target="1.8" />
+      <module name="lecloud-server-api" target="1.8" />
+      <module name="lecloud-server-manager" target="1.8" />
+      <module name="lecloud-ume-server" target="1.8" />
+      <module name="lecloud-utils" target="1.8" />
+    </bytecodeTargetLevel>
   </component>
 </project>
